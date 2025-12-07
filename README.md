@@ -130,10 +130,10 @@ rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
 
 ```
 
-## **Delivery URL**
+## **Delivery**
 
 ```text
-MIssion １
+Mission １
 ・Dataset：nkmurst/amd_record-test3
 ・Model：mimi-neoki/policy_so101_petcap_smolvla2-15000
 Mission ２
