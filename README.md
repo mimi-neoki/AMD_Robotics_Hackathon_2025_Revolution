@@ -130,6 +130,9 @@ rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
 
 デモ動画
 ```text
+ミッション１
+・nkmurst/eval_policy_so101_petcap_smolvla2-10000
+ミッション２
 - nkmurst/eval_gorgeous-USA-SA-AF-10000_United_States
 - nkmurst/eval_gorgeous-USA-SA-AF-10000_SOUTH_AMERICA
 - nkmurst/eval_gorgeous-USA-SA-AF-10000_Europe　（Zero-shot）
