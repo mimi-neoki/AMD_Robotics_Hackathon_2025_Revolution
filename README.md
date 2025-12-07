@@ -129,6 +129,14 @@ rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
 ・モデル：mimi-neoki/gorgeous-USA-SA-AF-5000
 ```
 
+デモ動画
+```text
+- nkmurst/eval_gorgeous-USA-SA-AF-10000_United_States
+- nkmurst/eval_gorgeous-USA-SA-AF-10000_SOUTH_AMERICA
+- nkmurst/eval_gorgeous-USA-SA-AF-10000_Europe　（Zero-shot）
+```
+
+
 ## Directory Tree of this repo,
 
 <template>
