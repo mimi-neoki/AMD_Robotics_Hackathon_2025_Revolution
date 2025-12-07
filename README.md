@@ -19,6 +19,9 @@
 ・SO-101を2台
 ・地球儀
 
+![IMG_4256](https://github.com/user-attachments/assets/290f0315-864a-4c7e-9146-1155e18883b4)
+
+
 ### 2. テレオペでデータ収集
 
 ```bash
@@ -68,6 +71,8 @@ uv run lerobot-record \
 ```
 
 ### 3. 学習スクリプト
+```bash
+```
 
 ### 4. デプロイ
 
