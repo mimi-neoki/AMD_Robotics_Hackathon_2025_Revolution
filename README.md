@@ -1,12 +1,11 @@
 # AMD_Robotics_Hackathon_2025_Revolution
 
-## **Title:** AMD_RoboticHackathon2025-[Your Work of Mission2]
 
 ## **Team:** 
 
-チーム名：TeamDP
+Team name：TeamDP
 
-メンバー：高田、中村
+Members：Takada、Nakamura
 
 ## **Summary** <of your task>
 When you get lost or need a little guidance, one of the two SO-101 arms will rotate a globe while the other points to the corresponding location, using a place name as the prompt.
@@ -14,14 +13,15 @@ This task requires the model to handle multimodal information involving vision, 
 
 ## **How To**: <reproduce your work in steps>
 
-### 1. タスク環境を構築
-・SO-101を2台
-・地球儀
+### 1. Build the environment
+- 2 x SO-101 set 
+- Globe
+- 
 
 ![IMG_4256](https://github.com/user-attachments/assets/290f0315-864a-4c7e-9146-1155e18883b4)
 
 
-### 2. テレオペでデータ収集
+### 2. Data collection with Tele-operation
 
 ```bash
 export L1_PORT=/dev/tty.usbmodem5AB01833831
@@ -69,11 +69,24 @@ uv run lerobot-record \
 
 ```
 
-### 3. 学習スクリプト
+### 3. Train with lerobot-train
 ```bash
+lerobot-train \
+  --batch_size=32 \
+  --steps=30000 \
+  --output_dir=outputs/train/gorgeous-USA-SA-AF \
+  --job_name=gorgeous-USA-SA-AF \
+  --policy.device=cuda \
+  --policy.type=smolvla \
+  --policy.push_to_hub=true \
+  --policy.repo_id=mimi-neoki/gorgeous-USA-SA-AF \
+  --wandb.enable=true \
+  --save_freq=5000 \
+  --dataset.repo_id=nkmurst/amd_bi_arm_record_USA_SA_AF_merged \
+  --rename_map='{"observation.images.top": "observation.images.camera1", "observation.images.right": "observation.images.camera2", "observation.images.left": "observation.images.camera3"}'
 ```
 
-### 4. デプロイ
+### 4. Deploy
 
 ```bash
 #!/bin/bash
@@ -120,19 +133,19 @@ rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
 ## **Delivery URL**
 
 ```text
-ミッション１
-・データセット：nkmurst/amd_record-test3
-・モデル：mimi-neoki/policy_so101_petcap_smolvla2-15000
-ミッション２
-・データセット：nkmurst/amd_bi_arm_record_USA_SA_AF_merged
-・モデル：mimi-neoki/gorgeous-USA-SA-AF-5000
+MIssion １
+・Dataset：nkmurst/amd_record-test3
+・Model：mimi-neoki/policy_so101_petcap_smolvla2-15000
+Mission ２
+・Dataset：nkmurst/amd_bi_arm_record_USA_SA_AF_merged
+・Model：mimi-neoki/gorgeous-USA-SA-AF-5000
 ```
 
-デモ動画
+Demo 
 ```text
-ミッション１
+Mission １
 ・nkmurst/eval_policy_so101_petcap_smolvla2-10000
-ミッション２
+Mission ２
 - nkmurst/eval_gorgeous-USA-SA-AF-10000_United_States
 - nkmurst/eval_gorgeous-USA-SA-AF-10000_SOUTH_AMERICA
 - nkmurst/eval_gorgeous-USA-SA-AF-10000_Europe　（Zero-shot）
