@@ -1,0 +1,52 @@
+{
+  "os":  "Linux-6.1.0-39-amd64-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2025-12-07T04:56:38.850889Z",
+  "args":  [
+    "--batch_size=32",
+    "--steps=30000",
+    "--output_dir=outputs/train/gorgeous-USA-SA-AF",
+    "--job_name=gorgeous-USA-SA-AF",
+    "--policy.device=cuda",
+    "--policy.type=smolvla",
+    "--policy.push_to_hub=true",
+    "--policy.repo_id=mimi-neoki/gorgeous-USA-SA-AF",
+    "--wandb.enable=true",
+    "--save_freq=5000",
+    "--dataset.repo_id=nkmurst/amd_bi_arm_record_USA_SA_AF_merged",
+    "--rename_map={\"observation.images.top\": \"observation.images.camera1\", \"observation.images.right\": \"observation.images.camera2\", \"observation.images.left\": \"observation.images.camera3\"}"
+  ],
+  "program":  "/opt/venv/bin/lerobot-train",
+  "root":  "outputs/train/gorgeous-USA-SA-AF",
+  "host":  "robotics-jupyter-launcher-2578",
+  "executable":  "/opt/venv/bin/python",
+  "cpu_count":  160,
+  "cpu_count_logical":  160,
+  "gpu":  "AMD Instinct MI300X VF",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "2162185003008",
+      "used":  "1635294679040"
+    }
+  },
+  "memory":  {
+    "total":  "2029207175168"
+  },
+  "gpu_amd":  [
+    {
+      "id":  "0",
+      "uniqueId":  "0x237210cbefb2338b",
+      "vbiosVersion":  "113-M3000100-103",
+      "performanceLevel":  "auto",
+      "maxPower":  "750.0",
+      "series":  "AMD Instinct MI300X VF",
+      "model":  "0x74b5",
+      "vendor":  "Advanced Micro Devices, Inc. [AMD/ATI]",
+      "sku":  "M3000100",
+      "sclkRange":  "500Mhz - 2100Mhz",
+      "mclkRange":  "900Mhz - 1300Mhz"
+    }
+  ],
+  "writerId":  "1y0yxst0dhvkxaysz789pzfl1kmemepx"
+}
