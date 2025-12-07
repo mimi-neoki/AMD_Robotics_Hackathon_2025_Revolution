@@ -1,0 +1,473 @@
+INFO 2025-12-05 17:52:04 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2025-12-05 17:52:04 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/naoki-takada-matsuo-lab/lerobot/runs/7wtykcwl[0m
+INFO 2025-12-05 17:52:04 ot_train.py:183 Creating dataset
+INFO 2025-12-05 17:52:04 ot_train.py:202 Creating policy
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Reducing the number of VLM layers to 16 ...
+INFO 2025-12-05 17:52:12 ot_train.py:247 Creating optimizer and scheduler
+INFO 2025-12-05 17:52:12 ot_train.py:259 [1m[33mOutput dir:[0m outputs/train/so101_petcap_smolvla2
+INFO 2025-12-05 17:52:12 ot_train.py:262 cfg.steps=30000 (30K)
+INFO 2025-12-05 17:52:12 ot_train.py:263 dataset.num_frames=12005 (12K)
+INFO 2025-12-05 17:52:12 ot_train.py:264 dataset.num_episodes=30
+INFO 2025-12-05 17:52:12 ot_train.py:267 Effective batch size: 64 x 1 = 64
+INFO 2025-12-05 17:52:12 ot_train.py:268 num_learnable_params=99880992 (100M)
+INFO 2025-12-05 17:52:12 ot_train.py:269 num_total_params=450046176 (450M)
+INFO 2025-12-05 17:52:12 ot_train.py:324 Start offline training on a fixed dataset
+INFO 2025-12-05 17:53:45 ot_train.py:351 step:200 smpl:13K ep:32 epch:1.07 loss:0.081 grdn:0.557 lr:1.0e-05 updt_s:0.419 data_s:0.046
+WARNING 2025-12-05 17:53:45 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 17:53:45 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 17:54:58 ot_train.py:351 step:400 smpl:26K ep:64 epch:2.13 loss:0.047 grdn:0.425 lr:3.0e-05 updt_s:0.329 data_s:0.035
+WARNING 2025-12-05 17:54:58 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 17:54:58 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 17:56:12 ot_train.py:351 step:600 smpl:38K ep:96 epch:3.20 loss:0.038 grdn:0.436 lr:5.0e-05 updt_s:0.328 data_s:0.038
+WARNING 2025-12-05 17:56:12 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 17:56:12 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 17:57:24 ot_train.py:351 step:800 smpl:51K ep:128 epch:4.26 loss:0.036 grdn:0.452 lr:7.0e-05 updt_s:0.326 data_s:0.036
+WARNING 2025-12-05 17:57:24 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 17:57:24 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 17:58:38 ot_train.py:351 step:1K smpl:64K ep:160 epch:5.33 loss:0.036 grdn:0.453 lr:9.0e-05 updt_s:0.330 data_s:0.039
+WARNING 2025-12-05 17:58:38 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 17:58:38 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 17:59:52 ot_train.py:351 step:1K smpl:77K ep:192 epch:6.40 loss:0.033 grdn:0.413 lr:1.0e-04 updt_s:0.332 data_s:0.037
+WARNING 2025-12-05 17:59:52 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 17:59:52 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:01:07 ot_train.py:351 step:1K smpl:90K ep:224 epch:7.46 loss:0.031 grdn:0.396 lr:1.0e-04 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 18:01:07 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:01:07 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:02:21 ot_train.py:351 step:2K smpl:102K ep:256 epch:8.53 loss:0.029 grdn:0.375 lr:9.9e-05 updt_s:0.328 data_s:0.041
+WARNING 2025-12-05 18:02:21 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:02:21 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:03:35 ot_train.py:351 step:2K smpl:115K ep:288 epch:9.60 loss:0.026 grdn:0.351 lr:9.9e-05 updt_s:0.332 data_s:0.037
+WARNING 2025-12-05 18:03:35 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:03:35 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:04:49 ot_train.py:351 step:2K smpl:128K ep:320 epch:10.66 loss:0.025 grdn:0.326 lr:9.9e-05 updt_s:0.329 data_s:0.040
+WARNING 2025-12-05 18:04:49 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:04:49 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:06:03 ot_train.py:351 step:2K smpl:141K ep:352 epch:11.73 loss:0.024 grdn:0.316 lr:9.9e-05 updt_s:0.329 data_s:0.041
+WARNING 2025-12-05 18:06:03 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:06:03 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:07:17 ot_train.py:351 step:2K smpl:154K ep:384 epch:12.79 loss:0.023 grdn:0.293 lr:9.9e-05 updt_s:0.330 data_s:0.038
+WARNING 2025-12-05 18:07:17 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:07:17 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:08:31 ot_train.py:351 step:3K smpl:166K ep:416 epch:13.86 loss:0.022 grdn:0.310 lr:9.8e-05 updt_s:0.327 data_s:0.039
+WARNING 2025-12-05 18:08:31 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:08:31 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:09:44 ot_train.py:351 step:3K smpl:179K ep:448 epch:14.93 loss:0.021 grdn:0.290 lr:9.8e-05 updt_s:0.331 data_s:0.037
+WARNING 2025-12-05 18:09:44 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:09:44 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:10:58 ot_train.py:351 step:3K smpl:192K ep:480 epch:15.99 loss:0.020 grdn:0.293 lr:9.8e-05 updt_s:0.328 data_s:0.039
+WARNING 2025-12-05 18:10:58 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:10:58 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:12:18 ot_train.py:351 step:3K smpl:205K ep:512 epch:17.06 loss:0.019 grdn:0.271 lr:9.7e-05 updt_s:0.330 data_s:0.072
+WARNING 2025-12-05 18:12:18 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:12:18 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:13:33 ot_train.py:351 step:3K smpl:218K ep:544 epch:18.13 loss:0.019 grdn:0.289 lr:9.7e-05 updt_s:0.330 data_s:0.039
+WARNING 2025-12-05 18:13:33 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:13:33 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:14:49 ot_train.py:351 step:4K smpl:230K ep:576 epch:19.19 loss:0.019 grdn:0.280 lr:9.7e-05 updt_s:0.332 data_s:0.046
+WARNING 2025-12-05 18:14:49 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:14:49 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:16:03 ot_train.py:351 step:4K smpl:243K ep:608 epch:20.26 loss:0.017 grdn:0.260 lr:9.6e-05 updt_s:0.329 data_s:0.040
+WARNING 2025-12-05 18:16:03 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:16:03 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:17:19 ot_train.py:351 step:4K smpl:256K ep:640 epch:21.32 loss:0.017 grdn:0.256 lr:9.6e-05 updt_s:0.331 data_s:0.047
+WARNING 2025-12-05 18:17:19 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:17:19 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:18:32 ot_train.py:351 step:4K smpl:269K ep:672 epch:22.39 loss:0.016 grdn:0.247 lr:9.6e-05 updt_s:0.330 data_s:0.038
+WARNING 2025-12-05 18:18:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:18:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:19:47 ot_train.py:351 step:4K smpl:282K ep:704 epch:23.46 loss:0.016 grdn:0.244 lr:9.5e-05 updt_s:0.330 data_s:0.039
+WARNING 2025-12-05 18:19:47 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:19:47 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:21:02 ot_train.py:351 step:5K smpl:294K ep:736 epch:24.52 loss:0.016 grdn:0.253 lr:9.5e-05 updt_s:0.330 data_s:0.044
+WARNING 2025-12-05 18:21:02 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:21:02 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:22:16 ot_train.py:351 step:5K smpl:307K ep:768 epch:25.59 loss:0.015 grdn:0.252 lr:9.4e-05 updt_s:0.329 data_s:0.041
+WARNING 2025-12-05 18:22:16 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:22:16 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:23:30 ot_train.py:351 step:5K smpl:320K ep:800 epch:26.66 loss:0.014 grdn:0.248 lr:9.4e-05 updt_s:0.330 data_s:0.041
+WARNING 2025-12-05 18:23:30 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:23:30 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:23:30 ot_train.py:361 Checkpoint policy after step 5000
+INFO 2025-12-05 18:24:48 ot_train.py:351 step:5K smpl:333K ep:832 epch:27.72 loss:0.014 grdn:0.236 lr:9.3e-05 updt_s:0.333 data_s:0.039
+WARNING 2025-12-05 18:24:48 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:24:48 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:26:04 ot_train.py:351 step:5K smpl:346K ep:864 epch:28.79 loss:0.014 grdn:0.233 lr:9.3e-05 updt_s:0.333 data_s:0.044
+WARNING 2025-12-05 18:26:04 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:26:04 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:27:18 ot_train.py:351 step:6K smpl:358K ep:896 epch:29.85 loss:0.014 grdn:0.230 lr:9.2e-05 updt_s:0.329 data_s:0.039
+WARNING 2025-12-05 18:27:18 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:27:18 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:28:31 ot_train.py:351 step:6K smpl:371K ep:928 epch:30.92 loss:0.013 grdn:0.221 lr:9.2e-05 updt_s:0.327 data_s:0.040
+WARNING 2025-12-05 18:28:31 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:28:31 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:29:46 ot_train.py:351 step:6K smpl:384K ep:960 epch:31.99 loss:0.013 grdn:0.227 lr:9.1e-05 updt_s:0.331 data_s:0.039
+WARNING 2025-12-05 18:29:46 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:29:46 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:31:01 ot_train.py:351 step:6K smpl:397K ep:992 epch:33.05 loss:0.012 grdn:0.216 lr:9.0e-05 updt_s:0.330 data_s:0.044
+WARNING 2025-12-05 18:31:01 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:31:01 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:32:19 ot_train.py:351 step:6K smpl:410K ep:1K epch:34.12 loss:0.012 grdn:0.226 lr:9.0e-05 updt_s:0.326 data_s:0.066
+WARNING 2025-12-05 18:32:19 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:32:19 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:33:34 ot_train.py:351 step:7K smpl:422K ep:1K epch:35.19 loss:0.013 grdn:0.213 lr:8.9e-05 updt_s:0.331 data_s:0.040
+WARNING 2025-12-05 18:33:34 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:33:34 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:34:48 ot_train.py:351 step:7K smpl:435K ep:1K epch:36.25 loss:0.012 grdn:0.205 lr:8.8e-05 updt_s:0.332 data_s:0.037
+WARNING 2025-12-05 18:34:48 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:34:48 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:36:03 ot_train.py:351 step:7K smpl:448K ep:1K epch:37.32 loss:0.011 grdn:0.214 lr:8.8e-05 updt_s:0.332 data_s:0.044
+WARNING 2025-12-05 18:36:03 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:36:03 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:37:18 ot_train.py:351 step:7K smpl:461K ep:1K epch:38.38 loss:0.012 grdn:0.212 lr:8.7e-05 updt_s:0.330 data_s:0.043
+WARNING 2025-12-05 18:37:18 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:37:18 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:38:34 ot_train.py:351 step:7K smpl:474K ep:1K epch:39.45 loss:0.011 grdn:0.202 lr:8.6e-05 updt_s:0.333 data_s:0.041
+WARNING 2025-12-05 18:38:34 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:38:34 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:39:48 ot_train.py:351 step:8K smpl:486K ep:1K epch:40.52 loss:0.011 grdn:0.202 lr:8.6e-05 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 18:39:48 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:39:48 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:41:04 ot_train.py:351 step:8K smpl:499K ep:1K epch:41.58 loss:0.010 grdn:0.195 lr:8.5e-05 updt_s:0.334 data_s:0.043
+WARNING 2025-12-05 18:41:04 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:41:04 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:42:18 ot_train.py:351 step:8K smpl:512K ep:1K epch:42.65 loss:0.010 grdn:0.196 lr:8.4e-05 updt_s:0.329 data_s:0.041
+WARNING 2025-12-05 18:42:18 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:42:18 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:43:32 ot_train.py:351 step:8K smpl:525K ep:1K epch:43.72 loss:0.010 grdn:0.200 lr:8.3e-05 updt_s:0.330 data_s:0.040
+WARNING 2025-12-05 18:43:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:43:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:44:47 ot_train.py:351 step:8K smpl:538K ep:1K epch:44.78 loss:0.010 grdn:0.186 lr:8.3e-05 updt_s:0.329 data_s:0.041
+WARNING 2025-12-05 18:44:47 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:44:47 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:46:01 ot_train.py:351 step:9K smpl:550K ep:1K epch:45.85 loss:0.010 grdn:0.192 lr:8.2e-05 updt_s:0.333 data_s:0.040
+WARNING 2025-12-05 18:46:01 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:46:01 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:47:17 ot_train.py:351 step:9K smpl:563K ep:1K epch:46.91 loss:0.010 grdn:0.193 lr:8.1e-05 updt_s:0.331 data_s:0.046
+WARNING 2025-12-05 18:47:17 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:47:17 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:48:34 ot_train.py:351 step:9K smpl:576K ep:1K epch:47.98 loss:0.010 grdn:0.189 lr:8.0e-05 updt_s:0.333 data_s:0.047
+WARNING 2025-12-05 18:48:34 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:48:34 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:49:50 ot_train.py:351 step:9K smpl:589K ep:1K epch:49.05 loss:0.009 grdn:0.187 lr:7.9e-05 updt_s:0.334 data_s:0.044
+WARNING 2025-12-05 18:49:50 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:49:50 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:51:05 ot_train.py:351 step:9K smpl:602K ep:2K epch:50.11 loss:0.009 grdn:0.182 lr:7.9e-05 updt_s:0.332 data_s:0.044
+WARNING 2025-12-05 18:51:05 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:51:05 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:52:25 ot_train.py:351 step:10K smpl:614K ep:2K epch:51.18 loss:0.009 grdn:0.185 lr:7.8e-05 updt_s:0.331 data_s:0.066
+WARNING 2025-12-05 18:52:25 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:52:25 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:53:39 ot_train.py:351 step:10K smpl:627K ep:2K epch:52.24 loss:0.009 grdn:0.179 lr:7.7e-05 updt_s:0.330 data_s:0.038
+WARNING 2025-12-05 18:53:39 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:53:39 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:54:55 ot_train.py:351 step:10K smpl:640K ep:2K epch:53.31 loss:0.008 grdn:0.174 lr:7.6e-05 updt_s:0.329 data_s:0.047
+WARNING 2025-12-05 18:54:55 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:54:55 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:54:55 ot_train.py:361 Checkpoint policy after step 10000
+INFO 2025-12-05 18:56:12 ot_train.py:351 step:10K smpl:653K ep:2K epch:54.38 loss:0.008 grdn:0.169 lr:7.5e-05 updt_s:0.329 data_s:0.040
+WARNING 2025-12-05 18:56:12 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:56:12 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:57:27 ot_train.py:351 step:10K smpl:666K ep:2K epch:55.44 loss:0.008 grdn:0.174 lr:7.4e-05 updt_s:0.330 data_s:0.041
+WARNING 2025-12-05 18:57:27 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:57:27 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:58:42 ot_train.py:351 step:11K smpl:678K ep:2K epch:56.51 loss:0.008 grdn:0.180 lr:7.3e-05 updt_s:0.332 data_s:0.041
+WARNING 2025-12-05 18:58:42 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:58:42 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 18:59:56 ot_train.py:351 step:11K smpl:691K ep:2K epch:57.58 loss:0.008 grdn:0.168 lr:7.2e-05 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 18:59:56 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 18:59:56 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:01:11 ot_train.py:351 step:11K smpl:704K ep:2K epch:58.64 loss:0.008 grdn:0.168 lr:7.2e-05 updt_s:0.331 data_s:0.040
+WARNING 2025-12-05 19:01:11 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:01:11 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:02:26 ot_train.py:351 step:11K smpl:717K ep:2K epch:59.71 loss:0.008 grdn:0.170 lr:7.1e-05 updt_s:0.331 data_s:0.046
+WARNING 2025-12-05 19:02:26 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:02:26 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:03:41 ot_train.py:351 step:11K smpl:730K ep:2K epch:60.77 loss:0.007 grdn:0.156 lr:7.0e-05 updt_s:0.328 data_s:0.045
+WARNING 2025-12-05 19:03:41 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:03:41 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:04:55 ot_train.py:351 step:12K smpl:742K ep:2K epch:61.84 loss:0.007 grdn:0.164 lr:6.9e-05 updt_s:0.329 data_s:0.039
+WARNING 2025-12-05 19:04:55 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:04:55 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:06:10 ot_train.py:351 step:12K smpl:755K ep:2K epch:62.91 loss:0.007 grdn:0.161 lr:6.8e-05 updt_s:0.328 data_s:0.043
+WARNING 2025-12-05 19:06:10 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:06:10 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:07:24 ot_train.py:351 step:12K smpl:768K ep:2K epch:63.97 loss:0.007 grdn:0.161 lr:6.7e-05 updt_s:0.329 data_s:0.042
+WARNING 2025-12-05 19:07:24 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:07:24 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:08:38 ot_train.py:351 step:12K smpl:781K ep:2K epch:65.04 loss:0.007 grdn:0.153 lr:6.6e-05 updt_s:0.330 data_s:0.039
+WARNING 2025-12-05 19:08:38 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:08:38 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:09:53 ot_train.py:351 step:12K smpl:794K ep:2K epch:66.11 loss:0.007 grdn:0.156 lr:6.5e-05 updt_s:0.329 data_s:0.044
+WARNING 2025-12-05 19:09:53 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:09:53 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:11:14 ot_train.py:351 step:13K smpl:806K ep:2K epch:67.17 loss:0.007 grdn:0.153 lr:6.4e-05 updt_s:0.330 data_s:0.074
+WARNING 2025-12-05 19:11:14 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:11:14 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:12:29 ot_train.py:351 step:13K smpl:819K ep:2K epch:68.24 loss:0.007 grdn:0.154 lr:6.3e-05 updt_s:0.329 data_s:0.041
+WARNING 2025-12-05 19:12:29 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:12:29 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:13:45 ot_train.py:351 step:13K smpl:832K ep:2K epch:69.30 loss:0.007 grdn:0.153 lr:6.2e-05 updt_s:0.331 data_s:0.046
+WARNING 2025-12-05 19:13:45 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:13:45 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:14:59 ot_train.py:351 step:13K smpl:845K ep:2K epch:70.37 loss:0.006 grdn:0.151 lr:6.1e-05 updt_s:0.328 data_s:0.042
+WARNING 2025-12-05 19:14:59 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:14:59 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:16:13 ot_train.py:351 step:13K smpl:858K ep:2K epch:71.44 loss:0.006 grdn:0.147 lr:6.0e-05 updt_s:0.328 data_s:0.042
+WARNING 2025-12-05 19:16:13 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:16:13 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:17:27 ot_train.py:351 step:14K smpl:870K ep:2K epch:72.50 loss:0.006 grdn:0.147 lr:5.9e-05 updt_s:0.331 data_s:0.041
+WARNING 2025-12-05 19:17:27 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:17:27 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:18:43 ot_train.py:351 step:14K smpl:883K ep:2K epch:73.57 loss:0.006 grdn:0.150 lr:5.8e-05 updt_s:0.333 data_s:0.043
+WARNING 2025-12-05 19:18:43 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:18:43 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:19:58 ot_train.py:351 step:14K smpl:896K ep:2K epch:74.64 loss:0.006 grdn:0.140 lr:5.7e-05 updt_s:0.330 data_s:0.043
+WARNING 2025-12-05 19:19:58 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:19:58 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:21:13 ot_train.py:351 step:14K smpl:909K ep:2K epch:75.70 loss:0.006 grdn:0.144 lr:5.6e-05 updt_s:0.332 data_s:0.043
+WARNING 2025-12-05 19:21:13 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:21:13 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:22:29 ot_train.py:351 step:14K smpl:922K ep:2K epch:76.77 loss:0.006 grdn:0.142 lr:5.5e-05 updt_s:0.329 data_s:0.048
+WARNING 2025-12-05 19:22:29 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:22:29 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:23:43 ot_train.py:351 step:15K smpl:934K ep:2K epch:77.83 loss:0.006 grdn:0.142 lr:5.4e-05 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 19:23:43 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:23:43 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:24:58 ot_train.py:351 step:15K smpl:947K ep:2K epch:78.90 loss:0.006 grdn:0.146 lr:5.3e-05 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 19:24:58 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:24:58 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:26:14 ot_train.py:351 step:15K smpl:960K ep:2K epch:79.97 loss:0.005 grdn:0.138 lr:5.2e-05 updt_s:0.331 data_s:0.043
+WARNING 2025-12-05 19:26:14 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:26:14 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:26:14 ot_train.py:361 Checkpoint policy after step 15000
+INFO 2025-12-05 19:27:32 ot_train.py:351 step:15K smpl:973K ep:2K epch:81.03 loss:0.005 grdn:0.133 lr:5.1e-05 updt_s:0.326 data_s:0.047
+WARNING 2025-12-05 19:27:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:27:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:28:46 ot_train.py:351 step:15K smpl:986K ep:2K epch:82.10 loss:0.005 grdn:0.137 lr:5.0e-05 updt_s:0.330 data_s:0.039
+WARNING 2025-12-05 19:28:46 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:28:46 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:30:01 ot_train.py:351 step:16K smpl:998K ep:2K epch:83.17 loss:0.005 grdn:0.138 lr:4.9e-05 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 19:30:01 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:30:01 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:31:21 ot_train.py:351 step:16K smpl:1M ep:3K epch:84.23 loss:0.005 grdn:0.136 lr:4.8e-05 updt_s:0.329 data_s:0.070
+WARNING 2025-12-05 19:31:21 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:31:21 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:32:35 ot_train.py:351 step:16K smpl:1M ep:3K epch:85.30 loss:0.005 grdn:0.130 lr:4.7e-05 updt_s:0.331 data_s:0.041
+WARNING 2025-12-05 19:32:35 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:32:35 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:33:49 ot_train.py:351 step:16K smpl:1M ep:3K epch:86.36 loss:0.005 grdn:0.132 lr:4.6e-05 updt_s:0.329 data_s:0.041
+WARNING 2025-12-05 19:33:49 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:33:49 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:35:04 ot_train.py:351 step:16K smpl:1M ep:3K epch:87.43 loss:0.005 grdn:0.127 lr:4.5e-05 updt_s:0.330 data_s:0.040
+WARNING 2025-12-05 19:35:04 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:35:04 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:36:18 ot_train.py:351 step:17K smpl:1M ep:3K epch:88.50 loss:0.005 grdn:0.125 lr:4.4e-05 updt_s:0.329 data_s:0.042
+WARNING 2025-12-05 19:36:18 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:36:18 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:37:33 ot_train.py:351 step:17K smpl:1M ep:3K epch:89.56 loss:0.005 grdn:0.128 lr:4.3e-05 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 19:37:33 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:37:33 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:38:48 ot_train.py:351 step:17K smpl:1M ep:3K epch:90.63 loss:0.005 grdn:0.127 lr:4.2e-05 updt_s:0.330 data_s:0.044
+WARNING 2025-12-05 19:38:48 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:38:48 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:40:03 ot_train.py:351 step:17K smpl:1M ep:3K epch:91.70 loss:0.005 grdn:0.127 lr:4.1e-05 updt_s:0.330 data_s:0.041
+WARNING 2025-12-05 19:40:03 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:40:03 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:41:17 ot_train.py:351 step:17K smpl:1M ep:3K epch:92.76 loss:0.004 grdn:0.124 lr:4.0e-05 updt_s:0.329 data_s:0.042
+WARNING 2025-12-05 19:41:17 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:41:17 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:42:32 ot_train.py:351 step:18K smpl:1M ep:3K epch:93.83 loss:0.004 grdn:0.123 lr:3.9e-05 updt_s:0.329 data_s:0.043
+WARNING 2025-12-05 19:42:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:42:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:43:47 ot_train.py:351 step:18K smpl:1M ep:3K epch:94.89 loss:0.005 grdn:0.122 lr:3.8e-05 updt_s:0.330 data_s:0.044
+WARNING 2025-12-05 19:43:47 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:43:47 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:45:02 ot_train.py:351 step:18K smpl:1M ep:3K epch:95.96 loss:0.004 grdn:0.115 lr:3.7e-05 updt_s:0.329 data_s:0.043
+WARNING 2025-12-05 19:45:02 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:45:02 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:46:17 ot_train.py:351 step:18K smpl:1M ep:3K epch:97.03 loss:0.004 grdn:0.116 lr:3.6e-05 updt_s:0.330 data_s:0.043
+WARNING 2025-12-05 19:46:17 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:46:17 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:47:32 ot_train.py:351 step:18K smpl:1M ep:3K epch:98.09 loss:0.004 grdn:0.120 lr:3.5e-05 updt_s:0.332 data_s:0.043
+WARNING 2025-12-05 19:47:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:47:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:48:47 ot_train.py:351 step:19K smpl:1M ep:3K epch:99.16 loss:0.004 grdn:0.111 lr:3.4e-05 updt_s:0.327 data_s:0.047
+WARNING 2025-12-05 19:48:47 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:48:47 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:50:02 ot_train.py:351 step:19K smpl:1M ep:3K epch:100.22 loss:0.004 grdn:0.112 lr:3.3e-05 updt_s:0.329 data_s:0.044
+WARNING 2025-12-05 19:50:02 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:50:02 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:51:23 ot_train.py:351 step:19K smpl:1M ep:3K epch:101.29 loss:0.004 grdn:0.112 lr:3.2e-05 updt_s:0.331 data_s:0.073
+WARNING 2025-12-05 19:51:23 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:51:23 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:52:38 ot_train.py:351 step:19K smpl:1M ep:3K epch:102.36 loss:0.004 grdn:0.107 lr:3.1e-05 updt_s:0.329 data_s:0.042
+WARNING 2025-12-05 19:52:38 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:52:38 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:53:54 ot_train.py:351 step:19K smpl:1M ep:3K epch:103.42 loss:0.004 grdn:0.114 lr:3.0e-05 updt_s:0.332 data_s:0.045
+WARNING 2025-12-05 19:53:54 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:53:54 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:55:09 ot_train.py:351 step:20K smpl:1M ep:3K epch:104.49 loss:0.004 grdn:0.111 lr:2.9e-05 updt_s:0.331 data_s:0.045
+WARNING 2025-12-05 19:55:09 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:55:09 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:56:25 ot_train.py:351 step:20K smpl:1M ep:3K epch:105.56 loss:0.004 grdn:0.106 lr:2.8e-05 updt_s:0.332 data_s:0.045
+WARNING 2025-12-05 19:56:25 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:56:25 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:57:40 ot_train.py:351 step:20K smpl:1M ep:3K epch:106.62 loss:0.004 grdn:0.104 lr:2.7e-05 updt_s:0.332 data_s:0.041
+WARNING 2025-12-05 19:57:40 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:57:40 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 19:57:40 ot_train.py:361 Checkpoint policy after step 20000
+INFO 2025-12-05 19:58:58 ot_train.py:351 step:20K smpl:1M ep:3K epch:107.69 loss:0.004 grdn:0.105 lr:2.6e-05 updt_s:0.329 data_s:0.043
+WARNING 2025-12-05 19:58:58 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 19:58:58 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:00:13 ot_train.py:351 step:20K smpl:1M ep:3K epch:108.75 loss:0.004 grdn:0.103 lr:2.6e-05 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 20:00:13 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:00:13 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:01:28 ot_train.py:351 step:21K smpl:1M ep:3K epch:109.82 loss:0.004 grdn:0.104 lr:2.5e-05 updt_s:0.333 data_s:0.045
+WARNING 2025-12-05 20:01:28 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:01:28 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:02:44 ot_train.py:351 step:21K smpl:1M ep:3K epch:110.89 loss:0.004 grdn:0.098 lr:2.4e-05 updt_s:0.332 data_s:0.045
+WARNING 2025-12-05 20:02:44 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:02:44 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:04:00 ot_train.py:351 step:21K smpl:1M ep:3K epch:111.95 loss:0.004 grdn:0.102 lr:2.3e-05 updt_s:0.331 data_s:0.045
+WARNING 2025-12-05 20:04:00 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:04:00 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:05:15 ot_train.py:351 step:21K smpl:1M ep:3K epch:113.02 loss:0.003 grdn:0.093 lr:2.2e-05 updt_s:0.331 data_s:0.041
+WARNING 2025-12-05 20:05:15 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:05:15 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:06:29 ot_train.py:351 step:21K smpl:1M ep:3K epch:114.09 loss:0.003 grdn:0.095 lr:2.1e-05 updt_s:0.330 data_s:0.043
+WARNING 2025-12-05 20:06:29 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:06:29 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:07:44 ot_train.py:351 step:22K smpl:1M ep:3K epch:115.15 loss:0.003 grdn:0.096 lr:2.1e-05 updt_s:0.332 data_s:0.042
+WARNING 2025-12-05 20:07:44 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:07:44 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:08:58 ot_train.py:351 step:22K smpl:1M ep:3K epch:116.22 loss:0.004 grdn:0.098 lr:2.0e-05 updt_s:0.329 data_s:0.038
+WARNING 2025-12-05 20:08:58 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:08:58 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:10:18 ot_train.py:351 step:22K smpl:1M ep:4K epch:117.28 loss:0.003 grdn:0.094 lr:1.9e-05 updt_s:0.329 data_s:0.068
+WARNING 2025-12-05 20:10:18 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:10:18 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:11:32 ot_train.py:351 step:22K smpl:1M ep:4K epch:118.35 loss:0.004 grdn:0.098 lr:1.8e-05 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:11:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:11:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:12:46 ot_train.py:351 step:22K smpl:1M ep:4K epch:119.42 loss:0.003 grdn:0.090 lr:1.8e-05 updt_s:0.328 data_s:0.041
+WARNING 2025-12-05 20:12:46 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:12:47 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:14:01 ot_train.py:351 step:23K smpl:1M ep:4K epch:120.48 loss:0.003 grdn:0.093 lr:1.7e-05 updt_s:0.329 data_s:0.044
+WARNING 2025-12-05 20:14:01 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:14:01 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:15:16 ot_train.py:351 step:23K smpl:1M ep:4K epch:121.55 loss:0.003 grdn:0.091 lr:1.6e-05 updt_s:0.329 data_s:0.042
+WARNING 2025-12-05 20:15:16 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:15:16 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:16:30 ot_train.py:351 step:23K smpl:1M ep:4K epch:122.62 loss:0.003 grdn:0.087 lr:1.5e-05 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:16:30 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:16:30 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:17:45 ot_train.py:351 step:23K smpl:1M ep:4K epch:123.68 loss:0.003 grdn:0.091 lr:1.5e-05 updt_s:0.331 data_s:0.041
+WARNING 2025-12-05 20:17:45 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:17:45 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:19:00 ot_train.py:351 step:23K smpl:1M ep:4K epch:124.75 loss:0.003 grdn:0.089 lr:1.4e-05 updt_s:0.331 data_s:0.041
+WARNING 2025-12-05 20:19:00 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:19:00 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:20:14 ot_train.py:351 step:24K smpl:2M ep:4K epch:125.81 loss:0.003 grdn:0.089 lr:1.3e-05 updt_s:0.332 data_s:0.040
+WARNING 2025-12-05 20:20:14 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:20:14 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:21:30 ot_train.py:351 step:24K smpl:2M ep:4K epch:126.88 loss:0.003 grdn:0.082 lr:1.3e-05 updt_s:0.330 data_s:0.047
+WARNING 2025-12-05 20:21:30 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:21:30 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:22:44 ot_train.py:351 step:24K smpl:2M ep:4K epch:127.95 loss:0.003 grdn:0.086 lr:1.2e-05 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 20:22:44 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:22:44 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:23:59 ot_train.py:351 step:24K smpl:2M ep:4K epch:129.01 loss:0.003 grdn:0.081 lr:1.2e-05 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:23:59 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:23:59 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:25:14 ot_train.py:351 step:24K smpl:2M ep:4K epch:130.08 loss:0.003 grdn:0.080 lr:1.1e-05 updt_s:0.330 data_s:0.040
+WARNING 2025-12-05 20:25:14 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:25:14 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:26:30 ot_train.py:351 step:25K smpl:2M ep:4K epch:131.15 loss:0.003 grdn:0.077 lr:1.0e-05 updt_s:0.330 data_s:0.049
+WARNING 2025-12-05 20:26:30 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:26:30 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:27:45 ot_train.py:351 step:25K smpl:2M ep:4K epch:132.21 loss:0.003 grdn:0.078 lr:9.8e-06 updt_s:0.332 data_s:0.040
+WARNING 2025-12-05 20:27:45 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:27:45 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:28:59 ot_train.py:351 step:25K smpl:2M ep:4K epch:133.28 loss:0.003 grdn:0.077 lr:9.3e-06 updt_s:0.329 data_s:0.042
+WARNING 2025-12-05 20:28:59 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:28:59 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:28:59 ot_train.py:361 Checkpoint policy after step 25000
+INFO 2025-12-05 20:30:22 ot_train.py:351 step:25K smpl:2M ep:4K epch:134.34 loss:0.003 grdn:0.078 lr:8.8e-06 updt_s:0.331 data_s:0.067
+WARNING 2025-12-05 20:30:22 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:30:22 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:31:38 ot_train.py:351 step:25K smpl:2M ep:4K epch:135.41 loss:0.003 grdn:0.075 lr:8.3e-06 updt_s:0.332 data_s:0.046
+WARNING 2025-12-05 20:31:38 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:31:38 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:32:53 ot_train.py:351 step:26K smpl:2M ep:4K epch:136.48 loss:0.003 grdn:0.077 lr:7.8e-06 updt_s:0.330 data_s:0.042
+WARNING 2025-12-05 20:32:53 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:32:53 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:34:07 ot_train.py:351 step:26K smpl:2M ep:4K epch:137.54 loss:0.003 grdn:0.079 lr:7.4e-06 updt_s:0.331 data_s:0.039
+WARNING 2025-12-05 20:34:07 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:34:07 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:35:22 ot_train.py:351 step:26K smpl:2M ep:4K epch:138.61 loss:0.003 grdn:0.075 lr:6.9e-06 updt_s:0.331 data_s:0.043
+WARNING 2025-12-05 20:35:22 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:35:22 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:36:37 ot_train.py:351 step:26K smpl:2M ep:4K epch:139.68 loss:0.003 grdn:0.073 lr:6.5e-06 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:36:37 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:36:37 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:37:52 ot_train.py:351 step:26K smpl:2M ep:4K epch:140.74 loss:0.003 grdn:0.074 lr:6.1e-06 updt_s:0.331 data_s:0.043
+WARNING 2025-12-05 20:37:52 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:37:52 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:39:07 ot_train.py:351 step:27K smpl:2M ep:4K epch:141.81 loss:0.003 grdn:0.073 lr:5.7e-06 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:39:07 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:39:07 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:40:22 ot_train.py:351 step:27K smpl:2M ep:4K epch:142.87 loss:0.003 grdn:0.072 lr:5.4e-06 updt_s:0.332 data_s:0.042
+WARNING 2025-12-05 20:40:22 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:40:22 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:41:37 ot_train.py:351 step:27K smpl:2M ep:4K epch:143.94 loss:0.003 grdn:0.069 lr:5.0e-06 updt_s:0.333 data_s:0.042
+WARNING 2025-12-05 20:41:37 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:41:37 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:42:53 ot_train.py:351 step:27K smpl:2M ep:4K epch:145.01 loss:0.003 grdn:0.071 lr:4.7e-06 updt_s:0.332 data_s:0.042
+WARNING 2025-12-05 20:42:53 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:42:53 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:44:08 ot_train.py:351 step:27K smpl:2M ep:4K epch:146.07 loss:0.003 grdn:0.069 lr:4.4e-06 updt_s:0.332 data_s:0.043
+WARNING 2025-12-05 20:44:08 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:44:08 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:45:23 ot_train.py:351 step:28K smpl:2M ep:4K epch:147.14 loss:0.003 grdn:0.069 lr:4.2e-06 updt_s:0.332 data_s:0.043
+WARNING 2025-12-05 20:45:23 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:45:23 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:46:39 ot_train.py:351 step:28K smpl:2M ep:4K epch:148.20 loss:0.003 grdn:0.072 lr:3.9e-06 updt_s:0.330 data_s:0.044
+WARNING 2025-12-05 20:46:39 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:46:39 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:47:54 ot_train.py:351 step:28K smpl:2M ep:4K epch:149.27 loss:0.003 grdn:0.068 lr:3.7e-06 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:47:54 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:47:54 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:49:10 ot_train.py:351 step:28K smpl:2M ep:5K epch:150.34 loss:0.003 grdn:0.067 lr:3.5e-06 updt_s:0.333 data_s:0.046
+WARNING 2025-12-05 20:49:10 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:49:10 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:50:31 ot_train.py:351 step:28K smpl:2M ep:5K epch:151.40 loss:0.003 grdn:0.069 lr:3.3e-06 updt_s:0.334 data_s:0.071
+WARNING 2025-12-05 20:50:31 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:50:31 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:51:47 ot_train.py:351 step:29K smpl:2M ep:5K epch:152.47 loss:0.003 grdn:0.067 lr:3.1e-06 updt_s:0.332 data_s:0.046
+WARNING 2025-12-05 20:51:47 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:51:47 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:53:02 ot_train.py:351 step:29K smpl:2M ep:5K epch:153.54 loss:0.003 grdn:0.069 lr:3.0e-06 updt_s:0.331 data_s:0.040
+WARNING 2025-12-05 20:53:02 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:53:02 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:54:16 ot_train.py:351 step:29K smpl:2M ep:5K epch:154.60 loss:0.003 grdn:0.068 lr:2.8e-06 updt_s:0.330 data_s:0.041
+WARNING 2025-12-05 20:54:16 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:54:16 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:55:32 ot_train.py:351 step:29K smpl:2M ep:5K epch:155.67 loss:0.003 grdn:0.068 lr:2.7e-06 updt_s:0.334 data_s:0.043
+WARNING 2025-12-05 20:55:32 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:55:32 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:56:48 ot_train.py:351 step:29K smpl:2M ep:5K epch:156.73 loss:0.003 grdn:0.067 lr:2.6e-06 updt_s:0.333 data_s:0.044
+WARNING 2025-12-05 20:56:48 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:56:48 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:58:03 ot_train.py:351 step:30K smpl:2M ep:5K epch:157.80 loss:0.003 grdn:0.065 lr:2.6e-06 updt_s:0.331 data_s:0.042
+WARNING 2025-12-05 20:58:03 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:58:03 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 20:59:17 ot_train.py:351 step:30K smpl:2M ep:5K epch:158.87 loss:0.003 grdn:0.065 lr:2.5e-06 updt_s:0.329 data_s:0.040
+WARNING 2025-12-05 20:59:17 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 20:59:17 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 21:00:31 ot_train.py:351 step:30K smpl:2M ep:5K epch:159.93 loss:0.003 grdn:0.065 lr:2.5e-06 updt_s:0.327 data_s:0.042
+WARNING 2025-12-05 21:00:31 db_utils.py:141 WandB logging of key "losses_after_forward" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+WARNING 2025-12-05 21:00:31 db_utils.py:141 WandB logging of key "losses_after_rm_padding" was ignored as its type "<class 'torch.Tensor'>" is not handled by this wrapper.
+INFO 2025-12-05 21:00:31 ot_train.py:361 Checkpoint policy after step 30000
+INFO 2025-12-05 21:00:34 ot_train.py:430 End of training
