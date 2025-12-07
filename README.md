@@ -113,7 +113,7 @@ rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
 
 ```
 
-**Delivery URL**
+## **Delivery URL**
 
 ```text
 ミッション１
@@ -124,7 +124,7 @@ rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
 ・モデル：mimi-neoki/gorgeous-USA-SA-AF-5000
 ```
 
-Directory Tree of this repo,
+## Directory Tree of this repo,
 
 <template>
     
@@ -169,7 +169,7 @@ outputs/train/smolvla_so101_2cube_30k_steps/wandb/
         └── code
 ```
 
-**NOTES**
+## **NOTES**
 
 1. The `latest-run` is the soft link, please make sure to copy the real target directory it linked with all sub dirs and files.
 2. Only provide(upload) the wandb of yourlast success pre-trained model for the Mission.
