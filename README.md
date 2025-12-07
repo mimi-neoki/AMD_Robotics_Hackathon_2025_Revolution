@@ -13,8 +13,8 @@
 **Delivery URL**
 
 ```text
-•	URL of your dataset in Hugging Face
-•	URL of your model in Hugging Face
+・データセット：nkmurst/amd_bi_arm_record_USA_SA_AF_merged
+・モデル：mimi-neoki/gorgeous-USA-SA-AF-5000
 ```
 
 Directory Tree of this repo,
