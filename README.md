@@ -141,7 +141,13 @@ Mission ２
 ・Model：mimi-neoki/gorgeous-USA-SA-AF-5000
 ```
 
-Demo 
+## Demo 
+
+- Instructed to touch USA
+https://github.com/user-attachments/assets/acf4ba3f-6136-41f9-87ef-9800cee5b6b0
+
+
+- Logs
 ```text
 Mission １
 ・nkmurst/eval_policy_so101_petcap_smolvla2-10000
