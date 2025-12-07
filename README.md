@@ -1,5 +1,4 @@
 # AMD_Robotics_Hackathon_2025_Revolution
-<You coulde use the task you did in Mission2 as the project name, since Mission 1 is unified task for every team>
 
 ## **Title:** AMD_RoboticHackathon2025-[Your Work of Mission2]
 
@@ -10,8 +9,8 @@
 メンバー：高田、中村
 
 ## **Summary** <of your task>
-...
-
+When you get lost or need a little guidance, one of the two SO-101 arms will rotate a globe while the other points to the corresponding location, using a place name as the prompt.
+This task requires the model to handle multimodal information involving vision, language, and motion generation.
 
 ## **How To**: <reproduce your work in steps>
 
