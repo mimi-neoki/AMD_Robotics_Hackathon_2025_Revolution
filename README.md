@@ -3,7 +3,11 @@
 
 **Title:** AMD_RoboticHackathon2025-[Your Work of Mission2]
 
-**Team:** The name of your Team and Members
+**Team:** 
+
+チーム名：TeamDP
+
+メンバー：高田、中村
 
 **Summary** <of your task>
 ...
@@ -13,6 +17,10 @@
 **Delivery URL**
 
 ```text
+ミッション１
+・データセット：nkmurst/amd_record-test3
+・モデル：mimi-neoki/policy_so101_petcap_smolvla2-15000
+ミッション２
 ・データセット：nkmurst/amd_bi_arm_record_USA_SA_AF_merged
 ・モデル：mimi-neoki/gorgeous-USA-SA-AF-5000
 ```
