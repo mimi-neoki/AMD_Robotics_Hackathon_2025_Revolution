@@ -1,23 +1,135 @@
-# AMD_Robotics_Hackathon_2025_[Project Name]
+# AMD_Robotics_Hackathon_2025_Revolution
 <You coulde use the task you did in Mission2 as the project name, since Mission 1 is unified task for every team>
 
-**Title:** AMD_RoboticHackathon2025-[Your Work of Mission2]
+## **Title:** AMD_RoboticHackathon2025-[Your Work of Mission2]
 
-**Team:** The name of your Team and Members
+## **Team:** 
 
-**Summary** <of your task>
+チーム名：TeamDP
+
+メンバー：高田、中村
+
+## **Summary** <of your task>
 ...
 
-**How To**: <reproduce your work in steps>
 
-**Delivery URL**
+## **How To**: <reproduce your work in steps>
 
-```text
-•	URL of your dataset in Hugging Face
-•	URL of your model in Hugging Face
+### 1. タスク環境を構築
+・SO-101を2台
+・地球儀
+
+![IMG_4256](https://github.com/user-attachments/assets/290f0315-864a-4c7e-9146-1155e18883b4)
+
+
+### 2. テレオペでデータ収集
+
+```bash
+export L1_PORT=/dev/tty.usbmodem5AB01833831
+
+export F1_PORT=/dev/tty.usbmodem5AB01576731
+
+export L2_PORT=/dev/tty.usbmodem5AE60552841
+
+export F2_PORT=/dev/tty.usbmodem5AE60552981
+
+COUNTRY="China"
+
+PROMPT="Touch the part of the globe that represents the land area of the $COUNTRY with the right arm. Rotate the glove or Hold it in place with the left arm."
+
+# RICH_PROMPT="The purpose of this task is for the right arm to touch $COUNTRY on the globe. Since the left arm rotates the globe, the right arm waits until it finds $COUNTRY and observes the situation. If the right arm finds $COUNTRY , the left arm fixes the globe so that the right arm is easy to touch, and the right arm touches $COUNTRY. Please carry out the task taking into account the geographical information of the earth, the location relationship, the shape, and the text information depicted on the globe. The name of the country is written in Japanese on the globe."
+
+export DATA_NAME="amd_bi_arm_record-${COUNTRY}-2"
+
+echo $PROMPT
+
+echo $DATA_NAME
+
+export DISPLAY=:0
+
+echo $DISPLAY
+
+uv run lerobot-record \
+    --robot.type=bi_so101_follower \
+    --robot.left_arm_port=$F1_PORT \
+    --robot.right_arm_port=$F2_PORT \
+    --robot.id=bi_follower_arm \
+    --robot.cameras="{top: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}" \
+    --teleop.type=bi_so101_leader \
+    --teleop.left_arm_port=$L1_PORT \
+    --teleop.right_arm_port=$L2_PORT \
+    --teleop.id=bi_leader_arm \
+    --display_data=True \
+    --dataset.repo_id=nkmurst/$DATA_NAME \
+    --dataset.num_episodes=100 \
+    --dataset.episode_time_s=300 \
+    --dataset.reset_time_s=5 \
+    --dataset.single_task="$PROMPT" \
+    --dataset.root=${HOME}/$DATA_NAME \
+    --dataset.push_to_hub=True
+
 ```
 
-Directory Tree of this repo,
+### 3. 学習スクリプト
+```bash
+```
+
+### 4. デプロイ
+
+```bash
+#!/bin/bash
+
+export L1_PORT=/dev/tty.usbmodem5AB01833831
+
+export F1_PORT=/dev/tty.usbmodem5AB01576731
+
+export L2_PORT=/dev/tty.usbmodem5AE60552841
+
+export F2_PORT=/dev/tty.usbmodem5AE60552981
+
+export POLICY_NAME=gorgeous-USA-SA-AF-10000
+
+# conda activate lerobot
+# 
+# COUNTRY="United_States"
+# COUNTRY="SOUTH_AMERICA"
+# COUNTRY="Africa"
+COUNTRY="Europe"
+
+PROMPT="Touch the part of the globe that represents the land area of the $COUNTRY with the right arm. Rotate the glove or Hold it in place with the left arm."
+
+uv run lerobot-record \
+  --robot.type=bi_so101_follower \
+  --robot.left_arm_port=$F1_PORT \
+  --robot.right_arm_port=$F2_PORT \
+  --robot.id=bi_follower_arm \
+  --robot.cameras="{top: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}" \
+  --dataset.single_task="${PROMPT}" \
+  --dataset.repo_id=nkmurst/eval_${POLICY_NAME}_${COUNTRY} \
+  --dataset.root=${PWD}/eval_${POLICY_NAME}_${COUNTRY} \
+  --dataset.episode_time_s=60 \
+  --dataset.num_episodes=1 \
+  --policy.path=mimi-neoki/${POLICY_NAME} \
+  --dataset.push_to_hub=True \
+  --display_data=true
+
+rm -r ${PWD}/eval_${POLICY_NAME}_${COUNTRY}
+  
+
+```
+
+## **Delivery URL**
+
+```text
+ミッション１
+・データセット：nkmurst/amd_record-test3
+・モデル：mimi-neoki/policy_so101_petcap_smolvla2-15000
+ミッション２
+・データセット：nkmurst/amd_bi_arm_record_USA_SA_AF_merged
+・モデル：mimi-neoki/gorgeous-USA-SA-AF-5000
+```
+
+## Directory Tree of this repo,
 
 <template>
     
@@ -62,7 +174,7 @@ outputs/train/smolvla_so101_2cube_30k_steps/wandb/
         └── code
 ```
 
-**NOTES**
+## **NOTES**
 
 1. The `latest-run` is the soft link, please make sure to copy the real target directory it linked with all sub dirs and files.
 2. Only provide(upload) the wandb of yourlast success pre-trained model for the Mission.
